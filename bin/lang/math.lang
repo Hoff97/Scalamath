@@ -1,0 +1,25 @@
+import src/lang/abstract.lang
+
+DEFINE math : all = ||
+
+DEFINE sign = '[A-Za-z]+'
+
+DEFINE if : all = "if(",all,") ",all," else ",all
+
+DEFINE operator = "+"|"*"|"-"|"/"|"^"|"&"|"|"|"><"|"<"|">"|"<="|">="
+DEFINE operation : math = math,operator,math
+DEFINE functionOne : math = sign,"(",math,")"
+DEFINE functionTwo : math = sign,"(",math,",",math,")"
+DEFINE functionThree : math = sign,"(",math,",",math,",",math,")"
+
+DEFINE fm var,"_","(",math,")" : math = functionOne(0,2,3,4)
+
+DEFINE os operator,"[",math,",",math,"]" : math = operation(2,0,4)
+
+DEFINE s sign,"_" : math = 0
+
+DEFINE v : math = var
+DEFINE n : math = number
+DEFINE p : math = paranthese
+DEFINE i : math = ignore
+DEFINE nP : math = numberPattern

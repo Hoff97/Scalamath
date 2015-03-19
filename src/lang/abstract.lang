@@ -1,0 +1,14 @@
+DEFINE list[e;d] = e|(e,d,this)
+
+DEFINE binding : all = var,"->",all
+DEFINE bindlist : all = list[binding;","]
+
+DEFINE application : all = all,"#>",all
+
+DEFINE paranthese "(",all,")" : all = 1
+
+DEFINE matching : all = all,"<->",all
+
+DEFINE rule : all = all,"=>",all
+
+DEFINE ignore : all = "_"

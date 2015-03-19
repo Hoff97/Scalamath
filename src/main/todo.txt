@@ -1,0 +1,15 @@
+- Implement Dots(..,...) for pattern matching
+
+- Operators for conversion?
+
+- Documentation
+
+- Enhanced Evalutation-Algorithm:
+	- Hirarchic Structure Checking (needs to be removed?)
+	- Rule Checking (How to apply rule?)
+	-> Evaluation Order   (---> Conditioned Rules defined by evaluation order)
+	- A* as fallback if all other evaluations dont work (or as an option)
+	
+- explore latex (options to make graphs, interactive objects, etc.)
+
+- project structure

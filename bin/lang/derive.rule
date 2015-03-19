@@ -1,0 +1,25 @@
+require src/lang/math.lang
+
+a^b=>e_^(b*ln(a))
+
+sqrt(a)=>a^(0.5)
+
+d(x,x)=>1
+d(a+b,x)=>d(a,x)+d(b,x)
+d(f_(a),x)=>d(a,x)*d(f_(a),a)
+
+d(e_^a,x)=>d(e_^a,a)*d(a,x)
+
+d(a*b,x)=>(d(b,x)*a)+(d(a,x)*b)
+
+d(e_^x,x)=>e_^x
+
+d(ln(x),x)=>1/x
+
+d(sin(x),x)=>cos(x)
+
+d(num[a],x)=>0
+
+d(x^num[a],x)=>a*x^(a-1)
+
+d(a)=>d(a,x)

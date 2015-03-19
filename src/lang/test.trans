@@ -1,0 +1,3 @@
+require src/lang/math.lang
+
+a+b=>javax.swing.JFrame(a+"+"+b)

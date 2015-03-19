@@ -1,0 +1,6 @@
+require src/lang/math.lang
+
+if(W_,a,b)=>a
+if(F_,a,b)=>b
+
+f(n)=>if(n<2,1,n*f(n-1))

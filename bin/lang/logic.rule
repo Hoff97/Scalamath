@@ -1,0 +1,18 @@
+require src/lang/math.lang
+
+W_&W_=>W_
+F_&_=>F_
+_&F_=>F_
+
+Not(W_)=>W_
+Not(W_)=>F_
+Not(F_)=>W_
+Not(Not(x))=>x
+
+a|b=>Not(Not(a)&Not(b))
+
+Then(a,b)=>Not(a&Not(b))
+
+Eq(a,b)=>Then(a,b)&Then(b,a)
+
+a><b=>(b&Not(a))|(a&Not(b))
